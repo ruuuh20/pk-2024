@@ -1,0 +1,199 @@
+@import "_fonts.css";
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+@import "_typography.css";
+
+@import "tailwindcss/utilities";
+
+body {
+  @apply font-sans antialiased;
+}
+
+.grid-stack {
+  grid-template: 100% /100%;
+  height: 100lvh;
+}
+
+.top-bg {
+  background: linear-gradient(rgb(48, 52, 54), rgb(36, 39, 40));
+  grid-area: 1 / 1;
+}
+
+.size-full {
+  height: 100%;
+  width: 100%;
+}
+
+.bottom-bg {
+  grid-area: 1 /1;
+}
+.bg-scale {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+}
+
+.bg-inner {
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  clip-path: inset(0.4rem round 1.2rem);
+}
+
+.bg-scale::before {
+  /* background-color: rgba(0, 0, 0, 0.25); */
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  grid-area: 1 / 1;
+}
+.bg-darker::before {
+  background-color: rgba(0, 0, 0, 0.8);
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  /* grid-area: 1 / 1; */
+}
+
+.b-table,
+.border-row {
+  border-color: hsla(0, 0%, 100%, 0.1);
+  border-width: 1px;
+}
+
+.b-table {
+  grid-template-rows: 1fr 1fr;
+}
+
+.table-row-grid {
+  /* grid-template-columns: 1fr 2fr; */
+  /* justify-content: space-between; */
+}
+
+.border-light {
+  border-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.widget-grid {
+  z-index: 999;
+  /* grid-template-rows: 1fr 1fr; */
+
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+}
+
+.aaa {
+  grid-area: a;
+}
+
+.social-list li {
+  list-style: none;
+}
+
+.bottom-widget {
+  /* grid-template-columns: 1fr 1fr; */
+  /* border: 1px solid white; */
+}
+
+/* .left-box {
+  grid-area: ;
+} */
+
+.left-box {
+  grid-column: span 6;
+}
+.right-box {
+  grid-column: span 4;
+}
+
+.widget-border-radius {
+  border-radius: 0.8rem;
+}
+
+.bg-darker {
+  grid-area: 1 / 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+main {
+  overflow: hidden;
+}
+
+/* body {
+  height: 100vh;
+  background: repeating-conic-gradient(at 100%, #0000 0.000045%, #000d 0.0005%),
+    linear-gradient(red, transparent),
+    linear-gradient(to top left, blue, transparent),
+    linear-gradient(to top right, rgb(124, 211, 134), transparent);
+  background-blend-mode: overlay, screen, screen;
+} */
+
+/* .bg-scale::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  background-repeat: repeat;
+  background-position: center center;
+  background-image: url(https://grainy-gradients.vercel.app/noise.svg);
+} */
+
+.header {
+  position: relative;
+  z-index: 99999999;
+  color: white;
+  display: flex;
+  justify-content: end;
+  font-size: 81px;
+}
+
+.project {
+  color: white;
+  font-size: 36px;
+}
+
+.social-list {
+  justify-content: space-around;
+  align-items: center;
+}
+.social-list li a {
+  /* color: #33312f; */
+  text-decoration: none;
+  position: relative;
+  /* margin-right: 3.5rem;
+  margin-left: 0; */
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: center;
+  /* font-family: Arial; */
+}
+
+.social-list li a:hover {
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+.social-icon {
+  width: 80%;
+}
+
+.social-list li {
+  /* text-align: center; */
+}
+
+.muted {
+  color: hsla(0, 0%, 100%, 0.6);
+}
