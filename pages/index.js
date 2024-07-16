@@ -51,6 +51,25 @@ export default function Home() {
 
             <div className="relative z-10 ">
               <div className="overflow-hidden content">
+                <div className="star">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlSpace="preserve"
+                    style={{
+                      enableBackground: "new 0 0 122.88 122.88",
+                    }}
+                    viewBox="0 0 122.88 122.88"
+                  >
+                    <path
+                      d="M62.43 122.88h-1.98c0-16.15-6.04-30.27-18.11-42.34C30.27 68.47 16.16 62.43 0 62.43v-1.98c16.16 0 30.27-6.04 42.34-18.14C54.41 30.21 60.45 16.1 60.45 0h1.98c0 16.15 6.04 30.27 18.11 42.34 12.07 12.07 26.18 18.11 42.34 18.11v1.98c-16.15 0-30.27 6.04-42.34 18.11-12.07 12.07-18.11 26.18-18.11 42.34z"
+                      style={{
+                        fillRule: "evenodd",
+                        clipRule: "evenodd",
+                        fill: "orange",
+                      }}
+                    />
+                  </svg>
+                </div>
                 <div className="p-9 wrapper">
                   <div className="relative overflow-hidden table-container widget-border-radius">
                     {/* <div className="bg-darker"></div> */}
@@ -62,6 +81,7 @@ export default function Home() {
                             Projects
                           </h2>{" "}
                         </header>{" "} */}
+
                         <div className="projects-wrapper text-[14px]">
                           <div className="flex items-center justify-between py-5">
                             <div>
@@ -83,7 +103,6 @@ export default function Home() {
                                     stroke-width="2"
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
-                                    class="lucide lucide-move-up-right"
                                   >
                                     <path d="M13 5H19V11" />
                                     <path d="M19 5L5 19" />
@@ -93,7 +112,7 @@ export default function Home() {
                             </a>{" "}
                           </div>
                           <div class="flex items-center justify-between border-light py-5 border-t">
-                            <div>
+                            <div className="relative">
                               <h4 className="project-title">Project 2</h4>
                             </div>{" "}
                             <a href="/">
@@ -124,7 +143,6 @@ export default function Home() {
                                     stroke-width="2"
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
-                                    class="lucide lucide-move-up-right"
                                   >
                                     <path d="M13 5H19V11" />
                                     <path d="M19 5L5 19" />
@@ -153,7 +171,6 @@ export default function Home() {
                                     stroke-width="2"
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
-                                    class="lucide lucide-move-up-right"
                                   >
                                     <path d="M13 5H19V11" />
                                     <path d="M19 5L5 19" />
@@ -182,7 +199,6 @@ export default function Home() {
                                     stroke-width="2"
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
-                                    class="lucide lucide-move-up-right"
                                   >
                                     <path d="M13 5H19V11" />
                                     <path d="M19 5L5 19" />
@@ -211,7 +227,6 @@ export default function Home() {
                                     stroke-width="2"
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
-                                    class="lucide lucide-move-up-right"
                                   >
                                     <path d="M13 5H19V11" />
                                     <path d="M19 5L5 19" />
@@ -222,7 +237,7 @@ export default function Home() {
                           </div>
                         </div>
                       </div>
-                      <div className="bottom-widget border-row">
+                      <div className="bottom-widget ">
                         {" "}
                         <div className="grid p-6 text-white widget-grid">
                           <div className=" text-[14px] p-5 left-box border-row widget-border-radius">
@@ -347,10 +362,11 @@ export default function Home() {
                           </div> */}
                           <div className="right-box widget-border-radius border-row p-5 text-[14px]">
                             <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Exercitationem voluptatum, rerum molestiae
-                              maiores sed, nulla laudantium dolorum velit
-                              praesentium vero provid ent minus
+                              I&apos;m a front-end developer interested in
+                              creating dynamic, engaging, and user-centric
+                              websites. Currently I enjoy working with Next.js
+                              and am always exploring new tools to enhance my
+                              projects.
                             </p>
                           </div>
                         </div>
