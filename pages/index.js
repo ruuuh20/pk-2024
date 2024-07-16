@@ -25,7 +25,7 @@ export default function Home() {
         >
           <div className="fixed inset-0 z-0 grid grid-stack">
             <div className="top-bg size-full"></div>
-            <div className="relative z-10 bottom-bg size-full">
+            <div className="relative z-10 bottom-bg size-full ">
               <div className="size-full">
                 <div className="size-full bg-scale">
                   <img
@@ -46,7 +46,7 @@ export default function Home() {
             <div className="project">Project 1</div>
             <div className="project">Project 1</div>
           </div> */}
-          <m.div className="relative grid-stack bg-inner" variants={fade}>
+          <m.div className="relative my-5 grid-stack bg-inner" variants={fade}>
             {/* <div className="bg-darker"></div> */}
 
             <div className="relative z-10 ">
@@ -62,12 +62,16 @@ export default function Home() {
                             Projects
                           </h2>{" "}
                         </header>{" "} */}
-                        <div className="projects-wrapper">
+                        <div className="projects-wrapper text-[14px]">
                           <div className="flex items-center justify-between py-5">
-                            <div>Project 1</div>{" "}
+                            <div>
+                              <h4 className="project-title">Project 1</h4>
+                            </div>{" "}
                             <a href="/">
                               <div class="flex items-center gap-8 font-semibold">
-                                <div class="hidden bp:block">Learn more</div>{" "}
+                                <div class="hidden md:block text-[13px]">
+                                  <span>View Site</span>
+                                </div>{" "}
                                 <div class="w-5">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -89,10 +93,14 @@ export default function Home() {
                             </a>{" "}
                           </div>
                           <div class="flex items-center justify-between border-light py-5 border-t">
-                            <div>Project 2</div>{" "}
+                            <div>
+                              <h4 className="project-title">Project 2</h4>
+                            </div>{" "}
                             <a href="/">
                               <div class="flex items-center gap-8 font-semibold">
-                                <div class="hidden bp:block">Learn more</div>{" "}
+                                <div class="hidden md:block text-[13px]">
+                                  <span>View Site</span>
+                                </div>{" "}
                                 <div class="w-5">
                                   {/* <svg
                                     viewBox="0 0 16 16"
@@ -126,10 +134,14 @@ export default function Home() {
                             </a>{" "}
                           </div>
                           <div class="flex items-center justify-between border-light py-5 border-t">
-                            <div>Project 3</div>{" "}
+                            <div>
+                              <h4 className="project-title">Project 3</h4>
+                            </div>{" "}
                             <a href="/">
                               <div class="flex items-center gap-8 font-semibold">
-                                <div class="hidden bp:block">Learn more</div>{" "}
+                                <div class="hidden md:block text-[13px]">
+                                  <span>View Site</span>
+                                </div>{" "}
                                 <div class="w-5">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -151,10 +163,14 @@ export default function Home() {
                             </a>{" "}
                           </div>
                           <div class="flex items-center justify-between border-light py-5 border-t">
-                            <div>Project 4</div>{" "}
+                            <div>
+                              <h4 className="project-title">Project 4</h4>
+                            </div>{" "}
                             <a href="/">
                               <div class="flex items-center gap-8 font-semibold">
-                                <div class="hidden bp:block">Learn more</div>{" "}
+                                <div class="hidden md:block text-[13px]">
+                                  <span>View Site</span>
+                                </div>{" "}
                                 <div class="w-5">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -176,10 +192,14 @@ export default function Home() {
                             </a>{" "}
                           </div>
                           <div class="flex items-center justify-between border-light py-5 border-t">
-                            <div>Project 5</div>{" "}
+                            <div>
+                              <h4 className="project-title">Project 5</h4>
+                            </div>{" "}
                             <a href="/">
                               <div class="flex items-center gap-8 font-semibold">
-                                <div class="hidden bp:block">Learn more</div>{" "}
+                                <div class="hidden md:block text-[13px]">
+                                  <span>View Site</span>
+                                </div>{" "}
                                 <div class="w-5">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -204,8 +224,8 @@ export default function Home() {
                       </div>
                       <div className="bottom-widget border-row">
                         {" "}
-                        <div className="grid p-8 text-white widget-grid">
-                          <div className="p-5 left-box border-row widget-border-radius">
+                        <div className="grid p-6 text-white widget-grid">
+                          <div className=" text-[14px] p-5 left-box border-row widget-border-radius">
                             <span>hello </span>
 
                             <ul className="flex social-list">
@@ -242,7 +262,7 @@ export default function Home() {
                                 </a>
                                 <div className="w-[2em] mx-auto mt-2">
                                   <svg
-                                    class="social-icon"
+                                    class="w-full"
                                     width="32"
                                     height="32"
                                     viewBox="0 0 42 42"
@@ -277,7 +297,7 @@ export default function Home() {
                                 >
                                   LinkedIn
                                 </a>
-                                <div className="w-[2em] mx-auto mt-2">
+                                <div className="w-[2em] mx-auto mt-0">
                                   <svg
                                     class="w-full"
                                     width="41"
@@ -325,13 +345,12 @@ export default function Home() {
                             creating dynamic, engaging, and user-centric
                             websites.
                           </div> */}
-                          <div className="right-box widget-border-radius border-row p-5 text-[15px]">
+                          <div className="right-box widget-border-radius border-row p-5 text-[14px]">
                             <p>
-                              This is the introduction. Lorem ipsum dolor sit
-                              amet consectetur adipisicing elit. Exercitationem
-                              voluptatum, rerum molestiae maiores sed, nulla
-                              laudantium dolorum velit praesentium vero provid
-                              ent minus
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Exercitationem voluptatum, rerum molestiae
+                              maiores sed, nulla laudantium dolorum velit
+                              praesentium vero provid ent minus
                             </p>
                           </div>
                         </div>
